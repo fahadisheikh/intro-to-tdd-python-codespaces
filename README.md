@@ -1,45 +1,31 @@
 # Intro to TDD (Python + pytest) — FizzBuzz (Codespaces-ready)
 
-This repo is pre-configured for **GitHub Codespaces** via `.devcontainer/devcontainer.json`.
+Hi, this repo is quick way to start with a basic python environment fully configured for codespaces.
 
-## Quick start (Codespaces)
-1) Push this repo to GitHub (or create new repo and upload).
-2) Click **Code ▸ Create codespace on main**.
-3) Wait for setup to finish (it runs `pip install -r requirements.txt` automatically).
-4) Run tests from the terminal:
+You can run the following command to create your own codespaces environment:
+
+```
+https://codespaces.new/fahadisheikh//intro-to-tdd-python-codespaces?quickstart=1
+```
+
+This will do the following:
+
+1. Create a new codespaces (VSCode in a browser) environment (you will need to sign in with a github or other accounts)
+2. Setup the vscode with python extensions and also create a virtualenv using venv
+3. Setup the python paths and pytest to be able to run tests
+
+## Test Everything is Working
+
+Once VSCode environment is ready run the following in Terminal window:
+
 ```bash
 pytest
 ```
-or from the **Testing** sidebar in VS Code (pytest is already configured).
 
-### One-click link (optional)
-If your repo lives at `github.com/OWNER/REPO`, you can open a codespace directly:
-```
-https://codespaces.new/OWNER/REPO?quickstart=1
-```
+You should see something like:
 
-## Local dev (optional)
 ```bash
-python -m pip install --upgrade pip
-pip install -r requirements.txt
-pytest -q
+no tests ran in 0.01s
 ```
 
-## FizzBuzz kata (inside-out TDD)
-- `fizzbuzz(n)` with a simple composable rules engine
-- Tests demonstrate Red → Green → Refactor and easy extensibility
-
-## Repo layout
-```
-.
-├─ .devcontainer/
-│  └─ devcontainer.json
-├─ .vscode/
-│  └─ settings.json
-├─ tests/
-│  ├─ test_fizzbuzz_spec.py
-│  └─ test_rules_engine.py
-├─ fizzbuzz.py
-├─ pytest.ini
-└─ requirements.txt
-```
+Great! You are now ready to begin the FizzBuzz TDD Workshop!
