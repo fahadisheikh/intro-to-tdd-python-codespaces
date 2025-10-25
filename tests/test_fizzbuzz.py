@@ -1,4 +1,5 @@
-from src.fizzbuzz import fizzbuzz
+from src.fizzbuzz.fizzbuzz import fizzbuzz
 
 def test_when_3_then_FIZZ():
-    assert fizzbuzz(3) == "FIZZ"
+    result = fizzbuzz(3)
+    assert result == "FIZZ"
