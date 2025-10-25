@@ -2,11 +2,10 @@
 
 Hi, this repo is quick way to start with a basic python environment fully configured for codespaces.
 
-You can run the following command to create your own codespaces environment:
+You can click on the following URL to create your own codespaces environment:
 
-```
-https://codespaces.new/fahadisheikh//intro-to-tdd-python-codespaces?quickstart=1
-```
+[https://codespaces.new/fahadisheikh//intro-to-tdd-python-codespaces?quickstart=1]
+
 
 This will do the following:
 
