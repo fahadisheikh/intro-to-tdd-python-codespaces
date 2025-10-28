@@ -4,7 +4,7 @@ Hi, this repo is quick way to start with a basic python environment fully config
 
 You can click on the following URL to create your own codespaces environment:
 
-[https://codespaces.new/fahadisheikh//intro-to-tdd-python-codespaces?quickstart=1]
+[Click here to launch your personal codespaces environment - you will need a github account](https://codespaces.new/fahadisheikh//intro-to-tdd-python-codespaces?quickstart=1)
 
 
 This will do the following:
@@ -32,3 +32,8 @@ Great! You are now ready to begin the FizzBuzz TDD Workshop!
 
 [Go to the Tutorial](TUTORIAL.md) to get started.
 
+
+## QR Code for the repo:
+Scan QR Code to get here to the repo:
+
+<img src="intro-to-tdd-qr-code.png" alt="qr-code-to-intro-tdd-repo" width="300" height="300">
