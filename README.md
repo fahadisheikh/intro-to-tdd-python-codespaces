@@ -29,3 +29,6 @@ no tests ran in 0.01s
 ```
 
 Great! You are now ready to begin the FizzBuzz TDD Workshop!
+
+[Go to the Tutorial](TUTORIAL.md) to get started.
+
