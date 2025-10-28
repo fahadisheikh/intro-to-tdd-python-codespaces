@@ -1,6 +1,35 @@
 # Intro to TDD — FizzBuzz (Python + pytest)
 
-**Red–Green–Refactor (TDD in one minute):**
+## Fizz Buzz Exercise:
+
+Given an integer n, for every positive integer i <= n, the task is to print,
+
+    "FizzBuzz" if i is divisible by 3 and 5,
+    "Fizz" if i is divisible by 3,
+    "Buzz" if i is divisible by 5
+
+Output for first 15 numbers:
+```
+    1: 1
+    2: 2
+    3: FIZZ
+    4: 4
+    5: BUZZ
+    6: FIZZ
+    7: 7
+    8: 8
+    9: FIZZ
+    10: BUZZ
+    11: 11
+    12: FIZZ
+    13: 13
+    14: 14
+    15: FIZZBUZZ
+```
+
+
+## TDD in one minute
+**Red–Green–Refactor:**
 
 - **Red:** Write a *failing* test that states the desired behavior. The red failure proves the test can catch the absence of that behavior.
 - **Green:** Write the *smallest possible* implementation to make that test pass. Don’t chase elegance yet—just reach green.
