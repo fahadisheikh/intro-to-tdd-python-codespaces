@@ -72,17 +72,11 @@ def test_multiples_of_three_are_FIZZ():
 
 ### Step: Green — `src/fizzbuzz/fizzbuzz.py`
 ```python
-def fizzbuzz(n: int):
-    if n % 3 == 0:
-        return "FIZZ"
-    return n
+
 ```
 
 ### Step: Refactor — `test/fizzbuzz/test_fizzbuzz.py`
 ```python
-def test_returns_same_number_initially():
-    for n, expected in [(1, 1), (2, 2)]:
-        assert fizzbuzz(n) == expected
 
 def test_multiples_of_three_are_FIZZ():
     for n in (3, 6, 9):
@@ -113,7 +107,7 @@ def fizzbuzz(n: int):
 ### Step: Refactor — `test/fizzbuzz/test_fizzbuzz.py`
 ```python
 import pytest
-from fizzbuzz.fizzbuzz import fizzbuzz
+from src.fizzbuzz.fizzbuzz import fizzbuzz
 
 @pytest.mark.parametrize("n, expected", [(1, 1), (2, 2)])
 def test_returns_same_number_initially(n, expected):
@@ -134,7 +128,6 @@ def test_BUZZ(n):
 
 ### Step: Red — `test/fizzbuzz/test_fizzbuzz.py` (append)
 ```python
-import pytest
 
 @pytest.mark.parametrize("n", [15, 30, 45])
 def test_FIZZBUZZ(n):
@@ -158,7 +151,7 @@ def fizzbuzz(n: int):
 
 ---
 
-## Step 6 — Simple `main.py` (direct build, shows the type issue)
+## Step 6 — Simple `src/main.py` (direct build, shows the type issue)
 
 ```python
 from fizzbuzz.fizzbuzz import fizzbuzz
@@ -198,23 +191,22 @@ def fizzbuzz(n: int) -> str:
     return str(n)  # normalize
 ```
 
-`src/driver/__init__.py`
+`src/driver/driver.py`
 ```python
-from fizzbuzz.fizzbuzz import fizzbuzz
+from src.fizzbuzz.fizzbuzz import *
 
-def generate_sequence(start: int, end_inclusive: int):
+def generate_sequence(start: int, end: int):
     lines = []
-    for i in range(start, end_inclusive + 1):
+    for i in range (start, end + 1):
         lines.append(str(i) + ": " + fizzbuzz(i))
-    return lines
+    return lines 
 ```
 
-### Step: Refactor — `src/main.py`
+### Step: Refactor — `main.py` (main.py at top level)
 ```python
-from driver import generate_sequence
+from src.driver.driver import generate_sequence
 
 def main():
-    # main stays simple; just print the array
     print(*generate_sequence(1, 100), sep="\n")
 
 if __name__ == "__main__":
