@@ -4,7 +4,7 @@
     "python.testing.unittestEnabled": false,
     "python.testing.nosetestsEnabled": false,
     "python.testing.pytestArgs": [
-        "tests"
+        "test"
     ],
     "python.venvPath": "${workspaceFolder}/.venv"
 }

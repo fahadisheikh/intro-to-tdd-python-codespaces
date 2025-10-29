@@ -43,7 +43,7 @@ This tutorial labels each change explicitly as **Step: Red**, **Step: Green**, o
 
 ### Step: Red — `test/fizzbuzz/test_fizzbuzz.py`
 ```python
-from fizzbuzz.fizzbuzz import fizzbuzz
+from src.fizzbuzz.fizzbuzz import *
 
 def test_returns_same_number_initially():
     assert fizzbuzz(1) == 1
